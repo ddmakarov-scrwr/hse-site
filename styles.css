@@ -10,3 +10,112 @@ label { display:block; margin: 10px 0 6px; }
 input, select, textarea, button { font: inherit; padding: 10px; border-radius: 10px; border: 1px solid #ccc; }
 button { cursor: pointer; }
 fieldset { border: 1px solid #ddd; border-radius: 12px; padding: 12px; margin: 12px 0; }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    color: #222;
+}
+
+header {
+    background-color: #002b5c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: red;
+}
+
+section {
+    padding: 20px;
+}
+
+figure img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #002b5c;
+    color: white;
+}
+
+/* Псевдоэлемент */
+h2::after {
+    content: " ✨";
+}
+
+/* Атрибутный селектор */
+img[alt] {
+    border: 3px solid blue;
+}
+
+/* !important */
+strong {
+    color: green !important;
+}
+
+/* Адаптив */
+@media (max-width: 600px) {
+    body {
+        background-color: #dbeafe;
+    }
+}
+
+/* Flexbox для header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Flexbox для меню */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+/* Комбинация селекторов */
+header nav a {
+    transition: 0.3s;
+}
+
+header nav a:hover {
+    transform: scale(1.1);
+}
+
+/* ID селектор */
+#main-title {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+/* Class селектор */
+.highlight {
+    background-color: yellow;
+    padding: 5px;
+}
+/* ===== FLEX РАСПОЛОЖЕНИЕ ===== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
