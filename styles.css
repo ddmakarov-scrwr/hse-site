@@ -1,0 +1,12 @@
+body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; margin: 0; }
+header, main, footer { padding: 16px; }
+header { border-bottom: 1px solid #ddd; background: #f7f7f7; }
+nav a { margin-right: 12px; }
+main { max-width: 900px; }
+figure { margin: 16px 0; }
+img { max-width: 420px; height: auto; display: block; border: 1px solid #ddd; border-radius: 10px; }
+footer { border-top: 1px solid #ddd; margin-top: 16px; background: #fafafa; }
+label { display:block; margin: 10px 0 6px; }
+input, select, textarea, button { font: inherit; padding: 10px; border-radius: 10px; border: 1px solid #ccc; }
+button { cursor: pointer; }
+fieldset { border: 1px solid #ddd; border-radius: 12px; padding: 12px; margin: 12px 0; }

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Обратная связь — Я студент ВШЭ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Обратная связь</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="feedback.html">Обратная связь</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Форма</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Контактные данные</legend>
+
+          <label>Имя (обязательно)</label>
+          <input type="text" name="name" required minlength="2" placeholder="Иван" />
+
+          <label>Email (обязательно)</label>
+          <input type="email" name="email" required placeholder="name@example.com" />
+
+          <label>Телефон</label>
+          <input type="tel" name="phone" placeholder="+7..." />
+        </fieldset>
+
+        <fieldset>
+          <legend>Тема и предпочтения</legend>
+
+          <label>Тема обращения</label>
+          <select name="topic">
+            <option value="study">Вопрос про учёбу</option>
+            <option value="projects">Проекты</option>
+            <option value="other" selected>Другое</option>
+          </select>
+
+          <p>Как удобно получить ответ?</p>
+          <label><input type="radio" name="reply" value="email" checked /> Email</label>
+          <label><input type="radio" name="reply" value="phone" /> Телефон</label>
+
+          <p>Интересы:</p>
+          <label><input type="checkbox" name="interest" value="html" /> HTML</label>
+          <label><input type="checkbox" name="interest" value="css" /> CSS</label>
+          <label><input type="checkbox" name="interest" value="js" /> JavaScript</label>
+
+          <label>Срочность</label>
+          <input type="range" name="priority" min="1" max="5" value="3" />
+
+          <label>Дата, когда удобно связаться</label>
+          <input type="date" name="date" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Сообщение</legend>
+
+          <label>Текст сообщения</label>
+          <textarea name="message" rows="6" required placeholder="Напиши свой вопрос..."></textarea>
+
+          <label>
+            <input type="checkbox" name="agree" required />
+            Согласен(на) на обработку данных для ответа
+          </label>
+        </fieldset>
+
+        <button type="submit">Отправить</button>
+        <button type="reset">Очистить</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Имя Фамилия</p>
+  </footer>
+</body>
+</html>
