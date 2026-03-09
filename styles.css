@@ -119,3 +119,31 @@ nav {
     justify-content: center;
     gap: 40px;
 }
+#chat {
+    border: 1px solid #ccc;
+    padding: 15px;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f9f9f9;
+}
+
+.message {
+    margin: 5px 0;
+}
+
+.user {
+    color: blue;
+}
+
+.bot {
+    color: green;
+}
