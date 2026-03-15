@@ -101,24 +101,24 @@
 
 <h2>Обратная связь</h2>
 
-<form>
+<form action="/submit" method="POST">
 
-<div class="mb-3">
-<label class="form-label">Имя</label>
-<input class="form-control" type="text">
-</div>
+  <div class="mb-3">
+    <label class="form-label">Имя</label>
+    <input class="form-control" type="text" id="name" name="name" placeholder="Введите имя">
+  </div>
 
-<div class="mb-3">
-<label class="form-label">Email</label>
-<input class="form-control" type="email">
-</div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input class="form-control" type="email" id="email" name="email" placeholder="name@example.com">
+  </div>
 
-<div class="mb-3">
-<label class="form-label">Сообщение</label>
-<textarea class="form-control"></textarea>
-</div>
+  <div class="mb-3">
+    <label class="form-label">Сообщение</label>
+    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Введите сообщение"></textarea>
+  </div>
 
-<button class="btn btn-primary">Отправить</button>
+  <button class="btn btn-primary" type="submit">Отправить</button>
 
 </form>
 
