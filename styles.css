@@ -1,149 +1,24 @@
-body { font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.6; margin: 0; }
-header, main, footer { padding: 16px; }
-header { border-bottom: 1px solid #ddd; background: #f7f7f7; }
-nav a { margin-right: 12px; }
-main { max-width: 900px; }
-figure { margin: 16px 0; }
-img { max-width: 420px; height: auto; display: block; border: 1px solid #ddd; border-radius: 10px; }
-footer { border-top: 1px solid #ddd; margin-top: 16px; background: #fafafa; }
-label { display:block; margin: 10px 0 6px; }
-input, select, textarea, button { font: inherit; padding: 10px; border-radius: 10px; border: 1px solid #ccc; }
-button { cursor: pointer; }
-fieldset { border: 1px solid #ddd; border-radius: 12px; padding: 12px; margin: 12px 0; }
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f0f4ff;
-    color: #222;
+  background-color: #f0f4ff;
 }
 
-header {
-    background-color: #002b5c;
-    color: white;
-    padding: 20px;
-    text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: yellow;
-    font-weight: bold;
+section h2 {
+  letter-spacing: 2px;
+  color: darkred;
 }
 
-nav a:hover {
-    color: red;
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
-section {
-    padding: 20px;
-}
-
-figure img {
-    width: 250px;
-    border-radius: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #002b5c;
-    color: white;
-}
-
-/* Псевдоэлемент */
-h2::after {
-    content: " ✨";
-}
-
-/* Атрибутный селектор */
-img[alt] {
-    border: 3px solid blue;
-}
-
-/* !important */
-strong {
-    color: green !important;
-}
-
-/* Адаптив */
-@media (max-width: 600px) {
-    body {
-        background-color: #dbeafe;
-    }
-}
-
-/* Flexbox для header */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Flexbox для меню */
-nav {
-    display: flex;
-    gap: 30px;
-}
-
-/* Комбинация селекторов */
-header nav a {
-    transition: 0.3s;
-}
-
-header nav a:hover {
-    transform: scale(1.1);
-}
-
-/* ID селектор */
-#main-title {
-    font-size: 36px;
-    letter-spacing: 2px;
-}
-
-/* Class селектор */
-.highlight {
-    background-color: yellow;
-    padding: 5px;
-}
-/* ===== FLEX РАСПОЛОЖЕНИЕ ===== */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-#chat {
-    border: 1px solid #ccc;
-    padding: 15px;
-    max-width: 500px;
-    background: white;
-    border-radius: 10px;
-}
-
-#chat-messages {
-    height: 200px;
-    overflow-y: auto;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #f9f9f9;
-}
-
-.message {
-    margin: 5px 0;
-}
-
-.user {
-    color: blue;
-}
-
-.bot {
-    color: green;
+#plot {
+  width: 100%;
+  min-height: 420px;
 }
